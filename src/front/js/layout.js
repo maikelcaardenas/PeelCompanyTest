@@ -5,6 +5,8 @@ import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
 import { Profile } from "./pages/profile";
+import {Login} from "./component/login";
+import {SignUp} from "./component/signup";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
@@ -27,7 +29,9 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Home />} path="/" />
                         <Route element={<Profile />} path="/Profile" />
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<Login />} path="/login" />
+                        <Route element={<SignUp/>} path="/signup" />
+                        {/* <Route element={<Single />} path="/single/:theid" /> */}
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

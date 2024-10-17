@@ -60,7 +60,9 @@ export const Navbar = () => {
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="#" style={{ cursor: "pointer" }}>Separated link</a>
+                <Link className="dropdown-item" to="/login" style={{ cursor: "pointer" }}>
+                  Login
+                </Link>
               </li>
             </ul>
           </div>
