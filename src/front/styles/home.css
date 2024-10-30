@@ -1,15 +1,75 @@
-/*
-    home.css: This website contains selectors only used in home.css
-
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
-color{
-    background-color: rgb(255, 255, 17);
+/* home.css */
+.container {
+    width: 90%;
+    margin: auto;
 }
 
-.profile-img{
-    height: 450px;
-    width: 450px;
+.embed-responsive-item {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    position: relative;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel.slide {
+    width: 100%;
+    max-width: 500px;
+}
+
+.original-img {
+    max-width: 612px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .carousel.slide {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, h4 {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p, h4 {
+        font-size: 0.9rem;
+    }
 }
