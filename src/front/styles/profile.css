@@ -1,0 +1,59 @@
+/* home.css */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.profile-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .row .col-md-6 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .row.align-items-center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
